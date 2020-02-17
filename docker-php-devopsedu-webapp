@@ -1,0 +1,10 @@
+FROM devopsedu/webapp
+ADD website /var/www/html
+RUN rm /var/www/html/index.html
+CMD apachectl -D FOREGROUND
+
+
+
+#########Comments ########
+#The application code is moved or copied inside the container and a docker image is build.
+#An image is created. Now when you run this image, the php application will get executed.
